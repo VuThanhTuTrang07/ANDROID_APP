@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MusicAddActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#008000"
+        android:gravity="center"
+        android:text="THÔNG TIN BÀI HÁT"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/idmusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/maso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="25sp"
+                android:text="Mã Số:" />
+
+            <EditText
+                android:id="@+id/edtmaso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_dark"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tenmusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tenbai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?android:attr/colorActivatedHighlight"
+                android:textSize="25sp"
+                android:text="Tên Bài Hát:" />
+
+            <EditText
+                android:id="@+id/edttenbaihat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?android:attr/colorActivatedHighlight"
+                android:ems="10" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/loimusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/loibaihat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="25sp"
+                android:text="Lời Bài Hát:" />
+
+            <EditText
+                android:id="@+id/edtloibaihat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_green_dark"
+                android:ems="10"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/casi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/casy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_purple"
+                android:textSize="25sp"
+                android:text="Ca Sĩ:" />
+
+            <EditText
+                android:id="@+id/edtcasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_purple"
+                android:ems="10"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnLuu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="xulyThem"
+                android:text="Lưu" />
+
+            <Button
+                android:id="@+id/btnQuayVe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="xulyQuayVe"
+                android:text="Quay Về" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
